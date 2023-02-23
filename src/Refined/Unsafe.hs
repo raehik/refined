@@ -64,7 +64,7 @@ module Refined.Unsafe
 import           Control.Exception            (displayException)
 import           Data.Coerce                  (coerce)
 
-import           Refined                      (Predicate, refine)
+import           Refined                      (ApplyPred, refine)
 import           Refined.Unsafe.Type          (Refined(Refined))
 import           Data.Type.Coercion           (Coercion (..))
 #if __GLASGOW_HASKELL__ >= 805
@@ -80,7 +80,7 @@ import           Data.Coerce                  (Coercible)
 --   WARNING: this function is not total!
 --
 --   @since 0.2.0.0
-unsafeRefine :: (Predicate p x) => x -> Refined p x
+unsafeRefine :: ApplyPred p x => x -> Refined p x
 unsafeRefine = either (error . displayException) id . refine
 {-# INLINABLE unsafeRefine #-}
 
