@@ -85,6 +85,7 @@ module Refined
   , unrefine
 
     -- * 'Predicate'
+  , Pred(..)
   , ApplyPred(validate)
   , reifyPredicate
 
