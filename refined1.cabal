@@ -1,27 +1,26 @@
 cabal-version: 2.0
 name:
-  refined
+  refined1
 version:
-  0.8.1
+  0.9.0
 synopsis:
-  Refinement types with static and runtime checking
+  Refinement types with static and runtime checking (+ Refined1)
 description:
   For an extensive introduction to the library please follow to
   <http://nikita-volkov.github.io/refined this blog-post>.
 category:
   Data
 homepage:
-  https://github.com/nikita-volkov/refined
-bug-reports:
-  https://github.com/nikita-volkov/refined/issues
+  https://github.com/raehik/refined/tree/refined1-hackage
 author:
   Nikita Volkov <nikita.y.volkov@mail.ru>
 maintainer:
-  chessai <chessai1996@gmail.com>
+  Ben Orchard <thefirstmuffinman@gmail.com>
 copyright:
   Copyright © 2015, Nikita Volkov
   Copyright © 2018, Remy Goldschmidt
   Copyright © 2020, chessai
+  Copyright © 2023, Ben Orchard
 license:
   MIT
 license-file:
@@ -56,12 +55,6 @@ flag QuickCheck
     This may be useful for accelerating builds in sandboxes for expert users.
   default: True
   manual: True
-
-source-repository head
-  type:
-    git
-  location:
-    git://github.com/nikita-volkov/refined.git
 
 library
   hs-source-dirs:

@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to the [Haskell Package Versioning Policy](https://pvp.haskell.org/).
 
+## [0.9.0] - 2023-05-10
+Original project `refined` forked and released as `refined1` on Hackage while
+upstream discussions are pending. All previous history is retained for ease of
+upstreaming. Ideally, this library is obsoleted and deleted after a few months.
+
+- move `Typeable` constraint on predicate kind to `Predicate` class
+- add `Refined1`, `Predicate1` for functor predicates
+
 ## [0.8.1] - 2023-04-05
 ### Added
 - `Weaken` instances for `SizeGreaterThan`, `SizeLessThan`.

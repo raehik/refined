@@ -1,6 +1,7 @@
-# refined
+# refined1
 
-[![Build Status](https://travis-ci.org/nikita-volkov/refined.svg?branch=master)](https://travis-ci.org/nikita-volkov/refined)
+***Fork of [nikita-volkov/refined](https://github.com/nikita-volkov/refined)
+with minimal changes. Hopefully temporary.***
 
 In type theory, a refinement type is a type endowed
 with a predicate which is assumed to hold for any element
